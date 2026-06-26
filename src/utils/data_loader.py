@@ -27,7 +27,7 @@ def load_knowledge_base(path: str = None) -> str:
     return Path(path).read_text(encoding="utf-8")
 
 
-def split_text(text: str, chunk_size: int = 500, chunk_overlap: int = 50) -> list:
+def split_text(text: str, chunk_size: int = 900, chunk_overlap: int = 50) -> list:
     """
     Chia văn bản thành các đoạn nhỏ (chunks) để index.
 
